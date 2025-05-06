@@ -42,7 +42,7 @@ void main(List<String> arguments) async {
   }
 
   final api = auth.PowerCampusApi();
-  final token = await api.getUniToken(
+  await api.getUniToken(
     username: parsedArgs.option("username")!,
     password: parsedArgs.option("password")!,
   );
@@ -57,7 +57,7 @@ void main(List<String> arguments) async {
   }
   print(path.absolute("."));
   if (parsedArgs.wasParsed("output")) {
-    File(path.join(parsedArgs["output"],"output.json")).writeAsStringSync(jsonEncode(output));
+    File(path.join(parsedArgs["output"])).writeAsStringSync(jsonEncode(output));
   }
   if (parsedArgs.flag("lumon")) {
     print("\nMr. Milchick is coming... Session Terminated!");
