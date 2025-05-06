@@ -1,7 +1,6 @@
 import 'dart:convert';
 
 import 'package:dio/dio.dart';
-import 'package:tables_puree/students.dart';
 
 class PowerCampusApi {
   final dio = Dio();
