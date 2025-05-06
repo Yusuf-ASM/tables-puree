@@ -1,0 +1,2 @@
+dart compile exe --target-os=linux ./bin/tables_puree.dart -o ./table-puree
+dart compile exe --target-os=windows ./bin/tables_puree.dart -o ./table-puree
