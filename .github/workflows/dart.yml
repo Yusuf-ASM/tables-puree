@@ -64,30 +64,29 @@ jobs:
     needs: [build_linux, build_windows]
     runs-on: ubuntu-latest
     permissions:
-      contents: write # Needed to create releases
+      contents: write
     steps:
       - name: Download Linux build artifact
         uses: actions/download-artifact@v4
         with:
           name: linux-build
-          path: linux-build
+          path: ./
 
       - name: Download Windows build artifact
         uses: actions/download-artifact@v4
         with:
           name: windows-build
-          path: windows-build
+          path: ./
 
       - name: Create GitHub Release
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ github.run_number }}
-          release_name: Release ${{ github.run_number }}
-          artifacts: |
-            linux_build/table-puree-linux.zip
-            windows_build/table-puree-windows.exe
+          name: Release ${{ github.run_number }}
+          
+          files: |
+            ./table-puree-linux.zip
+            ./table-puree-windows.exe
 
       
         
