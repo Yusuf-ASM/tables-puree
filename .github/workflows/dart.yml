@@ -1,8 +1,3 @@
-# This workflow uses actions that are not certified by GitHub.
-# They are provided by a third-party and are governed by
-# separate terms of service, privacy policy, and support
-# documentation.
-
 name: Dart
 
 on:
@@ -12,31 +7,87 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-
+  build_linux:
+    runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4
 
-      # Note: This workflow uses the latest stable version of the Dart SDK.
-      # You can specify other versions if desired, see documentation here:
-      # https://github.com/dart-lang/setup-dart/blob/main/README.md
-      # - uses: dart-lang/setup-dart@v1
-      - uses: dart-lang/setup-dart@9a04e6d73cca37bd455e0608d7e5092f881fd603
+      - uses: dart-lang/setup-dart@v1
 
       - name: Install dependencies
         run: dart pub get
 
-      # Uncomment this step to verify the use of 'dart format' on each commit.
-      # - name: Verify formatting
-      #   run: dart format --output=none --set-exit-if-changed .
 
-      # Consider passing '--fatal-infos' for slightly stricter analysis.
       - name: Analyze project source
         run: dart analyze
 
-      # Your project will need to have tests in test/ and a dependency on
-      # package:test for this step to succeed. Note that Flutter projects will
-      # want to change this to 'flutter test'.
-      - name: Run tests
-        run: dart test
+      - name: Build executable
+        run: dart compile exe --target-os=linux ./bin/tables_puree.dart -o ./table-puree 
+    
+      - name: Compress the executable
+        run: sudo apt install zip; ; zip -9 ./table-puree-linux.zip ./table-puree 
+         
+      - name: Upload Linux build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: linux-build
+          path: ./table-puree-linux.zip
+      
+  build_windows:
+      runs-on: windows-2022
+      needs: build_linux
+      permissions: 
+        contents: write
+      steps:
+        - uses: actions/checkout@v4
+
+        - uses: dart-lang/setup-dart@v1
+
+        - name: Install dependencies
+          run: dart pub get
+
+
+        - name: Analyze project source
+          run: dart analyze
+
+        - name: Build executable
+          run: dart compile exe --target-os=windows ./bin/tables_puree.dart -o ./table-puree.exe 
+        
+        - name: Upload windows build artifact
+          uses: actions/upload-artifact@v4
+          with:
+            name: windows-build
+            path: ./table-puree.exe
+  
+  create_release:
+    name: Create Release
+    needs: [build_linux, build_windows]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Needed to create releases
+    steps:
+      - name: Download Linux build artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: linux-build
+          path: linux-build
+
+      - name: Download Windows build artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: windows-build
+          path: windows-build
+
+      - name: Create GitHub Release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.run_number }}
+          release_name: Release ${{ github.run_number }}
+          artifacts: |
+            linux_build/table-puree-linux.zip
+            windows_build/table-puree-windows.exe
+
+      
+        
