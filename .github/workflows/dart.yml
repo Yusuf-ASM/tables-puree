@@ -77,12 +77,12 @@ jobs:
         run: sudo apt install zip ; zip -9 ./table-puree-linux.zip ./table-puree ; zip -9 ./table-puree-windows.zip ./table-puree.exe
 
       - name: Make Linux binary executable
-        run: chmod +x ./table_puree
+        run: chmod +x ./table-puree
 
       - name: Extract version from Linux binary
         id: extract_version
         run: |
-          VERSION=$("./table_puree" -v)
+          VERSION=$("./table-puree" -v)
           echo "::set-output name=version::$VERSION"
 
       - name: Create GitHub Release
