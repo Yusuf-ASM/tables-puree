@@ -9,6 +9,7 @@ import 'package:tables_puree/tables.dart';
 import 'package:path/path.dart' as path;
 
 void main(List<String> arguments) async {
+  const version = "v1.0.1";
   var parser = ArgParser();
 
   parser.addOption("username", abbr: "u", defaultsTo: "potato", help: "Your account username");
@@ -20,17 +21,30 @@ void main(List<String> arguments) async {
     help:
         "Dependency tree location containing these files:\n- englIntensive.json\n- intensive.json\n- mathIntensive.json\n- normal.json",
   );
-  parser.addOption("output", abbr: "o", valueHelp: "path", help: "Output path location");
+  parser.addOption("output", abbr: "o", valueHelp: "path", help: "Output path location.");
   parser.addFlag("help", abbr: "h", help: "Help :)");
   parser.addFlag(
     "lumon",
     abbr: "l",
     defaultsTo: false,
     negatable: true,
-    help: "If you know, you know",
+    help: "If you know, you know.",
+  );
+
+  parser.addFlag(
+    "version",
+    abbr: "v",
+    defaultsTo: false,
+    negatable: true,
+    help: "Print Tables Puree version.",
   );
 
   final parsedArgs = parser.parse(arguments);
+
+  if (parsedArgs.flag("version")) {
+    print(version);
+    exit(0);
+  }
 
   if (parsedArgs.flag("help")) {
     print(parser.usage);

@@ -2,9 +2,9 @@ name: Dart
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
 
 jobs:
   build_linux:
@@ -17,48 +17,43 @@ jobs:
       - name: Install dependencies
         run: dart pub get
 
+      - name: Analyze project source
+        run: dart analyze
+
+      - name: Build executable
+        run: dart compile exe --target-os=linux ./bin/tables_puree.dart -o ./table-puree
+
+      - name: Upload Linux build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: linux-build
+          path: ./table-puree
+
+  build_windows:
+    runs-on: windows-2022
+    needs: build_linux
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: dart-lang/setup-dart@v1
+
+      - name: Install dependencies
+        run: dart pub get
 
       - name: Analyze project source
         run: dart analyze
 
       - name: Build executable
-        run: dart compile exe --target-os=linux ./bin/tables_puree.dart -o ./table-puree 
-    
-      - name: Compress the executable
-        run: sudo apt install zip; zip -9 ./table-puree-linux.zip ./table-puree 
-         
-      - name: Upload Linux build artifact
+        run: dart compile exe --target-os=windows ./bin/tables_puree.dart -o ./table-puree.exe
+
+      - name: Upload windows build artifact
         uses: actions/upload-artifact@v4
         with:
-          name: linux-build
-          path: ./table-puree-linux.zip
-      
-  build_windows:
-      runs-on: windows-2022
-      needs: build_linux
-      permissions: 
-        contents: write
-      steps:
-        - uses: actions/checkout@v4
+          name: windows-build
+          path: ./table-puree.exe
 
-        - uses: dart-lang/setup-dart@v1
-
-        - name: Install dependencies
-          run: dart pub get
-
-
-        - name: Analyze project source
-          run: dart analyze
-
-        - name: Build executable
-          run: dart compile exe --target-os=windows ./bin/tables_puree.dart -o ./table-puree.exe 
-        
-        - name: Upload windows build artifact
-          uses: actions/upload-artifact@v4
-          with:
-            name: windows-build
-            path: ./table-puree.exe
-  
   create_release:
     name: Create Release
     needs: [build_linux, build_windows]
@@ -78,15 +73,24 @@ jobs:
           name: windows-build
           path: ./
 
+      - name: Compress executables
+        run: sudo apt install zip ; zip -9 ./table-puree-linux.zip ./table-puree ; zip -9 ./table-puree-windows.zip ./table-puree.exe
+
+      - name: Make Linux binary executable
+        run: chmod +x linux_build/table_puree
+
+      - name: Extract version from Linux binary
+        id: extract_version
+        run: |
+          VERSION=$("./linux_build/table_puree" -v)
+          echo "::set-output name=version::$VERSION"
+
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: ${{ github.run_number }}
-          name: Release ${{ github.run_number }}
-          
+          tag_name: ${{ steps.extract_version.outputs.version }}
+          name: Release ${{ steps.extract_version.outputs.version }}
+
           files: |
             ./table-puree-linux.zip
-            ./table-puree-windows.exe
-
-      
-        
+            ./table-puree-windows.zip
