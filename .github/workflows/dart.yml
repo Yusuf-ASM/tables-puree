@@ -25,7 +25,7 @@ jobs:
         run: dart compile exe --target-os=linux ./bin/tables_puree.dart -o ./table-puree 
     
       - name: Compress the executable
-        run: sudo apt install zip; ; zip -9 ./table-puree-linux.zip ./table-puree 
+        run: sudo apt install zip; zip -9 ./table-puree-linux.zip ./table-puree 
          
       - name: Upload Linux build artifact
         uses: actions/upload-artifact@v4
