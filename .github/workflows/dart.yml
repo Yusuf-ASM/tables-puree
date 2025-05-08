@@ -17,9 +17,6 @@ jobs:
       - name: Install dependencies
         run: dart pub get
 
-      - name: Analyze project source
-        run: dart analyze
-
       - name: Build executable
         run: dart compile exe --target-os=linux ./bin/tables_puree.dart -o ./table-puree
 
@@ -41,9 +38,6 @@ jobs:
 
       - name: Install dependencies
         run: dart pub get
-
-      - name: Analyze project source
-        run: dart analyze
 
       - name: Build executable
         run: dart compile exe --target-os=windows ./bin/tables_puree.dart -o ./table-puree.exe

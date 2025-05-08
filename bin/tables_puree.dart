@@ -9,7 +9,7 @@ import 'package:tables_puree/tables.dart';
 import 'package:path/path.dart' as path;
 
 void main(List<String> arguments) async {
-  const version = "v1.0.1";
+  const version = "v1.0.2";
   var parser = ArgParser();
 
   parser.addOption("username", abbr: "u", defaultsTo: "potato", help: "Your account username");

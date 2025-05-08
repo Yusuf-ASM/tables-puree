@@ -1,0 +1,795 @@
+[
+  {
+    "taken": [
+      "csci101",
+      "csci102",
+      "engl-101",
+      "math111",
+      "phys101c",
+      "csci112",
+      "csci205",
+      "ecen101c",
+      "engl-102",
+      "math112",
+      "ssci101"
+    ],
+    "available": [
+      "math201",
+      "math211",
+      "csci221",
+      "csci207",
+      "engl201",
+      "math210",
+      "math301",
+      "math203"
+    ],
+    "id": "241-0-00217",
+    "email": "A.Ahmed2417@nu.edu.eg",
+    "personId": 19641
+  },
+  {
+    "taken": ["csci101", "phys101c", "csci102", "ecen101c", "engl-101", "math111"],
+    "available": ["csci221", "csci112", "csci205", "math201", "math211", "math112"],
+    "id": "241-0-01581",
+    "email": "A.Bastawi2481@nu.edu.eg",
+    "personId": 20985
+  },
+  {
+    "taken": [
+      "csci101",
+      "csci102",
+      "engl-101",
+      "math100",
+      "csci112",
+      "csci205",
+      "engl-102",
+      "huma001/101",
+      "math111",
+      "phys101c"
+    ],
+    "available": ["csci207", "engl201", "math201", "math112", "math211", "ecen101c", "csci221"],
+    "id": "241-0-00750",
+    "email": "A.Mohamed2450@nu.edu.eg",
+    "personId": 20160
+  },
+  {
+    "taken": [
+      "csci101",
+      "csci102",
+      "engl001",
+      "math111",
+      "csci112",
+      "csci205",
+      "engl-101",
+      "math112",
+      "phys101c"
+    ],
+    "available": [
+      "math201",
+      "math211",
+      "csci207",
+      "engl-102",
+      "math301",
+      "math210",
+      "math203",
+      "ecen101c",
+      "csci221"
+    ],
+    "id": "241-0-02102",
+    "email": "a.wael2402@nu.edu.eg",
+    "personId": 21506
+  },
+  {
+    "taken": [
+      "csci101",
+      "csci102",
+      "engl001",
+      "math100",
+      "csci112",
+      "csci205",
+      "engl-101",
+      "huma001/101",
+      "math111",
+      "phys101c"
+    ],
+    "available": ["csci207", "engl-102", "math112", "math201", "math211", "ecen101c", "csci221"],
+    "id": "241-0-02247",
+    "email": "A.Mohamed2447@nu.edu.eg",
+    "personId": 21650
+  },
+  {
+    "taken": [
+      "csci101",
+      "csci102",
+      "engl-101",
+      "math111",
+      "phys101c",
+      "csci112",
+      "csci205",
+      "ecen101c",
+      "engl-102",
+      "huma102",
+      "math112"
+    ],
+    "available": [
+      "math201",
+      "math211",
+      "csci221",
+      "csci207",
+      "engl201",
+      "math210",
+      "math301",
+      "math203"
+    ],
+    "id": "241-0-00351",
+    "email": "A.Mohamed2451@nu.edu.eg",
+    "personId": 19768
+  },
+  {
+    "taken": ["csci101", "csci102", "math111", "phys101c"],
+    "available": ["csci112", "csci205", "math201", "math211", "math112", "ecen101c", "csci221"],
+    "id": "241-0-00106",
+    "email": "A.Sary2406@nu.edu.eg",
+    "personId": 19538
+  },
+  {
+    "taken": ["csci101", "engl-101", "arts-205", "csci102", "engl-102", "math100"],
+    "available": ["csci112", "csci205", "engl201"],
+    "id": "241-0-00267",
+    "email": "A.mostafa2467@nu.edu.eg",
+    "personId": 19688
+  },
+  {
+    "taken": ["csci101", "engl-101", "math100", "csci102", "engl-102", "math111", "phys101c"],
+    "available": [
+      "csci112",
+      "csci205",
+      "engl201",
+      "math201",
+      "math112",
+      "math211",
+      "ecen101c",
+      "csci221"
+    ],
+    "id": "241-0-00289",
+    "email": "A.Yasser2489@nu.edu.eg",
+    "personId": 19710
+  },
+  {
+    "taken": [
+      "csci101",
+      "csci102",
+      "engl-101",
+      "math100",
+      "csci112",
+      "csci205",
+      "engl-102",
+      "huma102",
+      "math111",
+      "phys101c"
+    ],
+    "available": ["csci207", "engl201", "math201", "math112", "math211", "ecen101c", "csci221"],
+    "id": "241-0-00065",
+    "email": "A.Zohair2465@nu.edu.eg",
+    "personId": 19500
+  },
+  {
+    "taken": [
+      "csci101",
+      "csci102",
+      "engl-102",
+      "huma102",
+      "math100",
+      "csci112",
+      "csci205",
+      "engl201",
+      "huma001/101",
+      "math111",
+      "phys101c"
+    ],
+    "available": ["csci207", "engl202", "math201", "math211", "math112", "ecen101c", "csci221"],
+    "id": "241-0-00048",
+    "email": "j.amgad2448@nu.edu.eg",
+    "personId": 19486
+  },
+  {
+    "taken": [
+      "csci101",
+      "csci102",
+      "engl-101",
+      "math100",
+      "csci112",
+      "csci205",
+      "engl-102",
+      "huma102",
+      "math111",
+      "phys101c"
+    ],
+    "available": ["csci207", "engl201", "math201", "math112", "math211", "ecen101c", "csci221"],
+    "id": "241-0-00943",
+    "email": "J.Mohamed2443@nu.edu.eg",
+    "personId": 20349
+  },
+  {
+    "taken": [
+      "csci101",
+      "csci102",
+      "engl-102",
+      "math111",
+      "phys101c",
+      "csci112",
+      "csci205",
+      "ecen101c",
+      "engl201",
+      "huma001/101",
+      "math112"
+    ],
+    "available": [
+      "math201",
+      "math211",
+      "csci221",
+      "csci207",
+      "engl202",
+      "math210",
+      "math301",
+      "math203"
+    ],
+    "id": "241-0-01501",
+    "email": "J.khaled2401@nu.edu.eg",
+    "personId": 20906
+  },
+  {
+    "taken": [
+      "csci101",
+      "csci102",
+      "engl-101",
+      "math111",
+      "phys101c",
+      "csci112",
+      "csci205",
+      "ecen101c",
+      "engl-102",
+      "math112"
+    ],
+    "available": [
+      "math201",
+      "math211",
+      "csci221",
+      "csci207",
+      "engl201",
+      "math210",
+      "math301",
+      "math203"
+    ],
+    "id": "241-0-01444",
+    "email": "K.Ahmed2444@nu.edu.eg",
+    "personId": 20849
+  },
+  {
+    "taken": [
+      "csci101",
+      "csci102",
+      "engl-102",
+      "math111",
+      "phys101c",
+      "csci112",
+      "csci205",
+      "ecen101c",
+      "engl201",
+      "math112",
+      "nsci102"
+    ],
+    "available": [
+      "math201",
+      "math211",
+      "csci221",
+      "csci207",
+      "engl202",
+      "math210",
+      "math301",
+      "math203"
+    ],
+    "id": "241-0-00245",
+    "email": "k.Mohamed2445@nu.edu.eg",
+    "personId": 19667
+  },
+  {
+    "taken": [
+      "csci101",
+      "csci102",
+      "engl-101",
+      "math100",
+      "csci112",
+      "csci205",
+      "engl-102",
+      "huma102",
+      "math111",
+      "phys101c"
+    ],
+    "available": ["csci207", "engl201", "math201", "math112", "math211", "ecen101c", "csci221"],
+    "id": "241-0-00977",
+    "email": "K.MOHAMED2477@nu.edu.eg",
+    "personId": 20383
+  },
+  {
+    "taken": [
+      "csci101",
+      "csci102",
+      "engl-102",
+      "huma102",
+      "math100",
+      "csci112",
+      "csci205",
+      "engl201",
+      "huma001/101",
+      "math111",
+      "phys101c"
+    ],
+    "available": ["csci207", "engl202", "math201", "math211", "math112", "ecen101c", "csci221"],
+    "id": "241-0-01010",
+    "email": "K.Tarek2410@nu.edu.eg",
+    "personId": 20416
+  },
+  {
+    "taken": [
+      "csci101",
+      "csci102",
+      "engl-101",
+      "math111",
+      "phys101c",
+      "csci112",
+      "csci205",
+      "ecen101c",
+      "engl-102",
+      "math112"
+    ],
+    "available": [
+      "math201",
+      "math211",
+      "csci221",
+      "csci207",
+      "engl201",
+      "math210",
+      "math301",
+      "math203"
+    ],
+    "id": "241-0-00192",
+    "email": "K.Abouelsoud2492@nu.edu.eg",
+    "personId": 19618
+  },
+  {
+    "taken": [
+      "csci101",
+      "csci102",
+      "engl-102",
+      "huma102",
+      "math100",
+      "csci112",
+      "csci205",
+      "engl201",
+      "huma001/101",
+      "math111",
+      "phys101c"
+    ],
+    "available": ["csci207", "engl202", "math201", "math211", "math112", "ecen101c", "csci221"],
+    "id": "241-0-02249",
+    "email": "k.omar2449@nu.edu.eg",
+    "personId": 21652
+  },
+  {
+    "taken": [
+      "csci101",
+      "csci102",
+      "engl-101",
+      "math111",
+      "phys101c",
+      "csci112",
+      "csci205",
+      "ecen101c",
+      "engl-102",
+      "huma102",
+      "math112"
+    ],
+    "available": [
+      "math201",
+      "math211",
+      "csci221",
+      "csci207",
+      "engl201",
+      "math210",
+      "math301",
+      "math203"
+    ],
+    "id": "241-0-01738",
+    "email": "k.wallaa2438@nu.edu.eg",
+    "personId": 21142
+  },
+  {
+    "taken": [
+      "csci101",
+      "csci102",
+      "engl-101",
+      "math111",
+      "phys101c",
+      "csci112",
+      "csci205",
+      "ecen101c",
+      "engl-102",
+      "math112",
+      "psci-201"
+    ],
+    "available": [
+      "math201",
+      "math211",
+      "csci221",
+      "csci207",
+      "engl201",
+      "math210",
+      "math301",
+      "math203"
+    ],
+    "id": "241-0-01131",
+    "email": "K.Ahmed2431@nu.edu.eg",
+    "personId": 20537
+  },
+  {
+    "taken": [
+      "csci207/ecen204",
+      "engl-101",
+      "math112",
+      "math201",
+      "phys101c",
+      "csci208",
+      "csci217",
+      "csci221",
+      "engl-102",
+      "huma102",
+      "math203"
+    ],
+    "available": [
+      "math210",
+      "math301",
+      "csci322",
+      "ecen101c",
+      "csci464",
+      "csci419",
+      "csci461",
+      "csci417",
+      "csci313",
+      "csci305",
+      "csci311",
+      "engl201"
+    ],
+    "id": "241-0-01508",
+    "email": "L.thmathawes2408@nu.edu.eg",
+    "personId": 20913
+  },
+  {
+    "taken": [
+      "csci101",
+      "csci102",
+      "engl-101",
+      "math111",
+      "phys101c",
+      "csci112",
+      "csci205",
+      "ecen101c",
+      "engl-102",
+      "math112",
+      "ssci101"
+    ],
+    "available": [
+      "math201",
+      "math211",
+      "csci221",
+      "csci207",
+      "engl201",
+      "math210",
+      "math301",
+      "math203"
+    ],
+    "id": "241-0-01497",
+    "email": "L.Tamer2497@nu.edu.eg",
+    "personId": 20902
+  },
+  {
+    "taken": [
+      "csci101",
+      "csci102",
+      "engl-102",
+      "math111",
+      "phys101c",
+      "csci112",
+      "csci205",
+      "ecen101c",
+      "engl201",
+      "math112",
+      "nsci102"
+    ],
+    "available": [
+      "math201",
+      "math211",
+      "csci221",
+      "csci207",
+      "engl202",
+      "math210",
+      "math301",
+      "math203"
+    ],
+    "id": "241-0-00025",
+    "email": "l.ahmed2425@nu.edu.eg",
+    "personId": 18466
+  },
+  {
+    "taken": [
+      "csci101",
+      "csci102",
+      "engl-101",
+      "math100",
+      "csci112",
+      "csci205",
+      "engl-102",
+      "math111",
+      "phys101c"
+    ],
+    "available": ["csci207", "engl201", "math201", "math112", "math211", "ecen101c", "csci221"],
+    "id": "241-0-00340",
+    "email": "M.Alaa2440@nu.edu.eg",
+    "personId": 19757
+  },
+  {
+    "taken": [
+      "csci101",
+      "csci102",
+      "engl-101",
+      "math100",
+      "csci112",
+      "csci205",
+      "engl-102",
+      "huma102",
+      "math111",
+      "phys101c"
+    ],
+    "available": ["csci207", "engl201", "math201", "math112", "math211", "ecen101c", "csci221"],
+    "id": "241-0-02029",
+    "email": "M.Atef2429@nu.edu.eg",
+    "personId": 21433
+  },
+  {
+    "taken": [
+      "csci101",
+      "csci102",
+      "engl-101",
+      "math100",
+      "csci112",
+      "csci205",
+      "engl-102",
+      "math111",
+      "phys101c"
+    ],
+    "available": ["csci207", "engl201", "math201", "math112", "math211", "ecen101c", "csci221"],
+    "id": "241-0-02101",
+    "email": "M.Emad2401@nu.edu.eg",
+    "personId": 21505
+  },
+  {
+    "taken": [
+      "csci101",
+      "csci102",
+      "engl001-a",
+      "math111",
+      "csci112",
+      "engl001",
+      "math112",
+      "phys101c"
+    ],
+    "available": [
+      "csci205",
+      "math201",
+      "math211",
+      "csci207",
+      "math210",
+      "math301",
+      "math203",
+      "ecen101c",
+      "csci221"
+    ],
+    "id": "241-0-01345",
+    "email": "M.Wael2445@nu.edu.eg",
+    "personId": 20750
+  },
+  {
+    "taken": [
+      "csci101",
+      "csci102",
+      "engl-101",
+      "math111",
+      "phys101c",
+      "arts-201",
+      "csci112",
+      "csci205",
+      "ecen101c",
+      "engl-102",
+      "math112"
+    ],
+    "available": [
+      "math201",
+      "math211",
+      "csci221",
+      "csci207",
+      "engl201",
+      "math210",
+      "math301",
+      "math203"
+    ],
+    "id": "241-0-02364",
+    "email": "M.Abdelghany2464@nu.edu.eg",
+    "personId": 21767
+  },
+  {
+    "taken": ["csci101", "csci102", "engl-101", "math100"],
+    "available": ["csci112", "csci205"],
+    "id": "241-0-02564",
+    "email": "m.hany2464@nu.edu.eg",
+    "personId": 22946
+  },
+  {
+    "taken": ["csci101", "engl-101", "math111", "csci102", "engl-102", "math112", "phys101c"],
+    "available": [
+      "math201",
+      "math211",
+      "csci112",
+      "csci205",
+      "engl201",
+      "math210",
+      "math301",
+      "math203",
+      "ecen101c",
+      "csci221"
+    ],
+    "id": "241-0-02264",
+    "email": "M.Abdrabbo2464@nu.edu.eg",
+    "personId": 21667
+  },
+  {
+    "taken": [
+      "csci101",
+      "csci102",
+      "engl-101",
+      "math100",
+      "csci112",
+      "csci205",
+      "engl-102",
+      "math111",
+      "phys101c"
+    ],
+    "available": ["csci207", "engl201", "math201", "math112", "math211", "ecen101c", "csci221"],
+    "id": "241-0-00093",
+    "email": "M.Mohamed2493@nu.edu.eg",
+    "personId": 19526
+  },
+  {
+    "taken": [
+      "arts-205",
+      "csci101",
+      "csci102",
+      "engl-101",
+      "math100",
+      "csci112",
+      "csci205",
+      "engl-102",
+      "huma102",
+      "math111",
+      "phys101c"
+    ],
+    "available": ["csci207", "engl201", "math201", "math112", "math211", "ecen101c", "csci221"],
+    "id": "241-0-01482",
+    "email": "M.Emad2482@nu.edu.eg",
+    "personId": 20887
+  },
+  {
+    "taken": [
+      "csci101",
+      "csci102",
+      "engl-101",
+      "math100",
+      "ssci101",
+      "csci112",
+      "csci205",
+      "engl-102",
+      "huma102",
+      "math111",
+      "phys101c"
+    ],
+    "available": ["csci207", "engl201", "math201", "math112", "math211", "ecen101c", "csci221"],
+    "id": "241-0-00246",
+    "email": "M.Abd2446@nu.edu.eg",
+    "personId": 19668
+  },
+  {
+    "taken": [
+      "csci101",
+      "csci102",
+      "engl-101",
+      "math100",
+      "csci112",
+      "csci205",
+      "engl-102",
+      "math111",
+      "phys101c"
+    ],
+    "available": ["csci207", "engl201", "math201", "math112", "math211", "ecen101c", "csci221"],
+    "id": "241-0-02073",
+    "email": "M.Adly2473@nu.edu.eg",
+    "personId": 21477
+  },
+  {
+    "taken": [
+      "csci101",
+      "csci102",
+      "engl-101",
+      "math111",
+      "phys101c",
+      "csci112",
+      "csci205",
+      "ecen101c",
+      "engl-102",
+      "math112",
+      "nsci102"
+    ],
+    "available": [
+      "math201",
+      "math211",
+      "csci221",
+      "csci207",
+      "engl201",
+      "math210",
+      "math301",
+      "math203"
+    ],
+    "id": "241-0-00350",
+    "email": "M.Ahmed2450@nu.edu.eg",
+    "personId": 19767
+  },
+  {
+    "taken": [
+      "csci101",
+      "csci102",
+      "engl-101",
+      "math100",
+      "csci112",
+      "csci205",
+      "engl-102",
+      "huma001/101",
+      "math111",
+      "phys101c"
+    ],
+    "available": ["csci207", "engl201", "math201", "math112", "math211", "ecen101c", "csci221"],
+    "id": "241-0-00562",
+    "email": "m.hossam2462@nu.edu.eg",
+    "personId": 19973
+  },
+  {
+    "taken": [
+      "csci101",
+      "csci102",
+      "engl-101",
+      "phys101c",
+      "csci112",
+      "csci205",
+      "engl-102",
+      "math111"
+    ],
+    "available": ["ecen101c", "csci221", "csci207", "engl201", "math201", "math211", "math112"],
+    "id": "241-0-02254",
+    "email": "m.ibrahim2454@nu.edu.eg",
+    "personId": 21657
+  },
+  {
+    "taken": ["csci101", "csci102", "engl-101", "huma102", "math111", "phys101c"],
+    "available": ["csci112", "csci205", "math201", "math211", "math112", "ecen101c", "csci221"],
+    "id": "241-0-01397",
+    "email": "S.Mohamed2497@nu.edu.eg",
+    "personId": 20802
+  }
+]

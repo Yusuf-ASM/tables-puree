@@ -27,7 +27,7 @@
   "csci495": [["seniorstanding"], ["csci496"]],
   "seniorstanding": [[], ["csci495"]],
   "csci415": [["csci419"], []],
-  "csci419": [["csci208"], ["csci415", "csci465"]],
+  "csci419": [["csci208","math211"], ["csci415", "csci465"]],
   "ssci101": [[], []],
   "ssci102": [[], []],
   "csci462": [["csci417"], []],
